@@ -88,6 +88,7 @@
         
     .hero h1 {
         font-size: clamp(1.8rem, 5vw, 3.5rem);
+        padding-top: 2.4rem;
     }
 
     .hero p {
@@ -295,19 +296,22 @@
         }
     }
 
-    @media (max-width: 600px) {
-        nav {
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-            padding: 15px 5%;
-        }
+   @media (max-width: 600px) {
+    nav {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        padding: 12px 2%;
+    }
 
-        nav a {
-            margin: 5px 8px;
-            font-size: 0.85rem;
-        }
+    nav a {
+        margin: 0;
+        padding: 5px 6px;
+        font-size: 0.7rem;  /* Smaller font */
+        font-weight: 500;
+        white-space: nowrap;
+    }
+
 
         .btn {
             width: 100%;
